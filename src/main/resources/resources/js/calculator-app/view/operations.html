@@ -1,0 +1,25 @@
+<form id="additionForm">
+	<div class="row">
+		<span class="col-md-12">
+			Enter two numbers to addition, the result will be computed:
+		</span>
+		<span class="col-md-12">
+			<input type="text" id="operandA" autocomplete="off"
+				ng-model="operandA" placeholder="Enter first number" size="20" />
+			+
+			<input type="text" id="operandB" autocomplete="off"
+				ng-model="operandB" placeholder="Enter second number" size="20" />
+		</span>
+		<span class="col-md-12">
+			<input id="additionBttn" type="button" value="Calculate" ng-click="doAddition();" />
+		</span>
+		<span class="col-md-12">
+			Result: <span ng-bind="operationResult.result" ng-if="operationResult.result != null"></span>
+			<ul ng-if="operationResult['errors'].length > 0">
+				<li ng-repeat="error in operationResult['errors'] track by $index">
+     				{{error}}
+   				</li>
+			</div>
+		</span>
+	</div>
+</form>

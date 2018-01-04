@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="calculator">
+<head>
+	<meta charset="utf-8" />
+	<title>Calculator</title>
+	<!-- CSS styles -->
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/angular-csp.css" rel="stylesheet" />
+	<!-- Angular JS -->
+	<script type="text/javascript" src="js/angular/angular.js"></script>
+	<script type="text/javascript" src="js/angular/angular-ui-router.js"></script>
+	<!-- Angular sign application -->
+	<script type="text/javascript" src="js/calculator-app/app.js"></script>
+	<script type="text/javascript" src="js/calculator-app/controller/operations-controller.js"></script>
+	<script type="text/javascript" src="js/calculator-app/controller/addition-log-controller.js"></script>
+	<script type="text/javascript" src="js/calculator-app/service/calculator-service.js"></script>
+
+</head>
+<body class="container-fluid">
+	<h1>Calculator</h1>
+
+	<section>
+		<div ui-view="header"></div>
+	</section>
+
+	<section>
+		<div ui-view="content"></div>
+	</section>
+
+</body>
+</html>
